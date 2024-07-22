@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MP3 Player</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>My Music</h1>
+        </header>
+        <select id="genreSelect">
+            <option value="pop">Pop</option>
+            <option value="hiphop">HipHop</option>
+        </select>
+        <!-- <input type="file" id="fileInput" multiple accept="audio/*"> -->
+        <div id="fileList"></div>
+        <audio id="audioPlayer" controls>
+            Your browser does not support the audio element.
+        </audio>
+        <div class="controls">
+            <button class="controlsButton" id="prevButton" aria-label="Previous"></button>
+            <button class="controlsButton" id="playPauseButton" class="play" aria-label="Play/Pause"></button>
+            <button class="controlsButton" id="nextButton" aria-label="Next"></button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
